@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Tools · mecatrobot</title>
+    <meta name="description" content="Interactive robotics tools: forward and inverse kinematics, DH table calculator, Jacobian, motion laws, differential drive, PID, path planning and Kalman filter." />
+    <meta name="theme-color" content="#2b2b93" />
+    <link rel="icon" href="favicon.ico" sizes="any" />
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/brand/favicon-32.png" />
+    <link rel="apple-touch-icon" href="assets/brand/apple-touch-icon.png" />
+    <script src="boot.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500..800&family=Instrument+Sans:wght@400..700&family=IBM+Plex+Mono:wght@400;500&display=swap" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="helpers.js"></script>
+    <script src="nav.js" defer></script>
+    <script src="learn-widgets.js" defer></script>
+    <script src="learn-more-widgets.js" defer></script>
+    <script src="tools.js" defer></script>
+  </head>
+  <body class="tools">
+    <header id="toolsHead" class="tools-head"></header>
+    <div class="tool-group" data-cat="kin">
+      <section class="tool" id="arm2"><div class="widget" data-widget="arm2"></div></section>
+      <section class="tool" id="dh"><div class="widget" data-widget="dh"></div></section>
+      <section class="tool" id="jac2r"><div class="widget" data-widget="jac2r"></div></section>
+      <section class="tool" id="jac2r-ellipse"><div class="widget" data-widget="jac2r-ellipse"></div></section>
+      <section class="tool" id="gimbal"><div class="widget" data-widget="gimbal"></div></section>
+      <section class="tool" id="dls"><div class="widget" data-widget="dls"></div></section>
+    </div>
+    <div class="tool-group" data-cat="motion">
+      <section class="tool" id="trap"><div class="widget" data-widget="trap"></div></section>
+      <section class="tool" id="diff"><div class="widget" data-widget="diff"></div></section>
+    </div>
+    <div class="tool-group" data-cat="control">
+      <section class="tool" id="gravity"><div class="widget" data-widget="gravity"></div></section>
+      <section class="tool" id="pid"><div class="widget" data-widget="pid"></div></section>
+    </div>
+    <div class="tool-group" data-cat="plan">
+      <section class="tool" id="astar"><div class="widget" data-widget="astar"></div></section>
+      <section class="tool" id="rrt"><div class="widget" data-widget="rrt"></div></section>
+    </div>
+    <div class="tool-group" data-cat="perc">
+      <section class="tool" id="kalman"><div class="widget" data-widget="kalman"></div></section>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>mecatrobot · learn robots by moving them</title>
+    <meta name="description" content="mecatrobot, the interactive learning platform of Mecatro Club: eight robots with 3D models, kinematic diagrams, DH tables, short lessons and small tools." />
+    <meta name="theme-color" content="#2b2b93" />
+    <meta property="og:title" content="mecatrobot · by Mecatro Club" />
+    <meta property="og:description" content="Learn robots by moving them: 3D models, diagrams, DH tables, lessons and tools." />
+    <meta property="og:image" content="assets/brand/icon-512.png" />
+    <link rel="icon" href="favicon.ico" sizes="any" />
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/brand/favicon-32.png" />
+    <link rel="apple-touch-icon" href="assets/brand/apple-touch-icon.png" />
+    <script type="importmap">
+      { "imports": { "three": "./vendor/three.module.min.js" } }
+    </script>
+    <link rel="modulepreload" href="vendor/three.module.min.js" />
+    <script src="boot.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500..800&family=Instrument+Sans:wght@400..700&family=IBM+Plex+Mono:wght@400;500&display=swap" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="helpers.js"></script>
+    <script src="dharm.js"></script>
+    <script src="nav.js" defer></script>
+    <script src="hub.js" defer></script>
+    <script type="module" src="hero3d.js"></script>
+  </head>
+  <body class="home">
+    <div id="hub"></div>
+  </body>
+</html>
